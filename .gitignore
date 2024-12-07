@@ -1,0 +1,3 @@
+# ignore all Private files that ends with txt
+
+*Data.txt
