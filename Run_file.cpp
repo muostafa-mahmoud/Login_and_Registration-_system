@@ -1,5 +1,4 @@
-//OOP_project
-// Login and Registration System
+//OOP_project @ Login and Registration System
 #include <bits/stdc++.h>
 using namespace std;
 void NewRegister();
@@ -32,7 +31,7 @@ void NewRegister()
     cin.ignore();
 
     if (NewRegister == "Yes" || NewRegister == "yEs" || NewRegister == "yES"
-            || NewRegister == "YeS"|| NewRegister == "YEs" || NewRegister == "YES")
+            || NewRegister == "YeS"|| NewRegister == "YEs" || NewRegister == "YES" || NewRegister == "yes ")
     {
         // enter first name
         cout << "First name : ";
@@ -69,7 +68,8 @@ void NewRegister()
              << "Valid email address." << endl
              << endl;
         // enter password
-        cout << "Password : \n(Note: your password must be at least one digit,one special character, one uppercase letter, and one lowercase letter) \n";
+        cout << "Password : "
+                "\n(Note: your password must be at least one digit,one special character, one uppercase letter, and one lowercase letter) \n";
         cin >> Password;
         while (validpassword(Password) == false)
         {
@@ -88,10 +88,10 @@ void NewRegister()
     {
 		string Username, Password;
     cout << endl    << "\tLog in\t" << endl<< endl;
-    cout << "Enter your username :" << endl;
+    cout << "Enter your username : " ;
     getline(cin, Username);
 
-    cout << "Enter your password :" << endl;
+    cout << "Enter your password : ";
     cin >> Password;
 
     cout << endl
